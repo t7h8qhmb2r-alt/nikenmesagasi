@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BAR_LAB.EXE - Search Results</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#161b2d",
+                    "primary-container": "#1a1b26",
+                    "on-tertiary": "#442b00",
+                    "surface-container-lowest": "#090d1f",
+                    "tertiary-container": "#291800",
+                    "on-surface": "#dee1fb",
+                    "tertiary": "#f0be75",
+                    "surface-dim": "#0e1224",
+                    "on-background": "#dee1fb",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed": "#e2e1f1",
+                    "on-error": "#690005",
+                    "error-container": "#93000a",
+                    "on-primary-fixed": "#1a1b26",
+                    "inverse-on-surface": "#2b2f43",
+                    "surface-container-highest": "#303447",
+                    "tertiary-fixed-dim": "#f0be75",
+                    "outline": "#919096",
+                    "on-surface-variant": "#c8c5cc",
+                    "surface-container": "#1b1f31",
+                    "on-secondary-fixed": "#001f25",
+                    "primary-fixed-dim": "#c6c5d4",
+                    "surface-bright": "#34384c",
+                    "primary": "#c6c5d4",
+                    "tertiary-fixed": "#ffddb2",
+                    "on-primary-fixed-variant": "#454652",
+                    "surface-tint": "#c6c5d4",
+                    "background": "#0e1224",
+                    "secondary-fixed": "#a6eeff",
+                    "error": "#ffb4ab",
+                    "on-primary": "#2f303b",
+                    "on-tertiary-fixed-variant": "#624000",
+                    "on-secondary-fixed-variant": "#004e5b",
+                    "secondary-container": "#00b6d0",
+                    "inverse-surface": "#dee1fb",
+                    "inverse-primary": "#5d5d6a",
+                    "on-primary-container": "#838391",
+                    "on-secondary": "#00363f",
+                    "outline-variant": "#47464c",
+                    "surface-container-high": "#25293c",
+                    "on-secondary-container": "#00424d",
+                    "surface": "#0e1224",
+                    "secondary-fixed-dim": "#4ad7f3",
+                    "on-tertiary-fixed": "#291800",
+                    "surface-variant": "#303447",
+                    "on-tertiary-container": "#a77c3a",
+                    "secondary": "#4ad7f3"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "16px",
+                    "xl": "64px",
+                    "md": "24px",
+                    "lg": "40px",
+                    "gutter": "20px",
+                    "base": "4px",
+                    "xs": "8px",
+                    "margin": "32px"
+            },
+            "fontFamily": {
+                    "label-caps": ["Space Grotesk"],
+                    "mono-data": ["Space Grotesk"],
+                    "h1": ["Space Grotesk"],
+                    "body-lg": ["Space Grotesk"],
+                    "body-md": ["Space Grotesk"],
+                    "h3": ["Space Grotesk"],
+                    "h2": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "mono-data": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "h2": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0e1224;
+            color: #dee1fb;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .neo-border {
+            border: 2px solid #414868;
+        }
+        .neo-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(26, 27, 38, 0.5);
+        }
+        .neo-shadow-lg {
+            box-shadow: 8px 8px 0px 0px rgba(26, 27, 38, 0.8);
+        }
+        .btn-active:active {
+            transform: translate(2px, 2px);
+            box-shadow: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<header class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 py-4 bg-slate-950 dark:bg-[#1A1B26] border-b-2 border-[#414868] shadow-[4px_4px_0px_0px_rgba(26,27,38,0.5)]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-teal-400" data-icon="terminal">terminal</span>
+<h1 class="text-lg font-bold text-teal-400 tracking-[0.2em] font-['Space_Grotesk'] uppercase">BAR_LAB.EXE</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-slate-500 hover:bg-slate-800 hover:text-teal-300 transition-colors active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-7xl mx-auto">
+<section class="mb-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-md border-l-4 border-secondary p-md bg-surface-container-low neo-border neo-shadow">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase mb-base block">Scan Parameters: NYC</span>
+<h2 class="font-h2 text-h2 text-on-surface">14 Specimens Found</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">Optimal matches identified based on neural preferences.</p>
+</div>
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-tertiary" data-icon="filter_list">filter_list</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">SORT BY: RELEVANCE</span>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+<!-- Result Card 1 -->
+<div class="group bg-surface-container neo-border neo-shadow transition-all hover:translate-x-[-2px] hover:translate-y-[-2px]">
+<div class="relative h-64 overflow-hidden border-b-2 border-[#414868]">
+<img alt="The Rustic Retort" class="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 transition-all duration-500" data-alt="A moody, high-contrast interior of a dark cocktail bar with deep oak wood textures and amber backlighting. Industrial laboratory glassware is visible on the shelves behind the bar, mixed with vintage decanters. The atmosphere is clinical yet cozy, with soft teal accents in the lighting and a slight haze of smoke in the air, emphasizing a Cyber-Lab Noir aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB887keNw1QkhoVidqGMr11BqMqQlAzl73kA17su7VQPNaJeO2U-NRjTG87vhGQKpjwRGMYHZdovlPqQWznqvOu0BouAotzWnxCdg9NUU1HSERDeCad3fGYNBXiAcGOMm38qQwxjzI2E-Ijm0mLovXbKLMppBMiSsVQGJVBiicVimMOg402FXazVi3rzzTS-wQWvO62bQMLjwHNMBMlDojsZi_T61YtMjewT9yF1FNZTJFTeDMmuiSvjiFYNaXIu_tcuke5Ce4mLiU"/>
+<div class="absolute top-sm right-sm bg-surface-container-lowest/90 px-md py-xs neo-border">
+<span class="font-mono-data text-mono-data text-secondary">92% MATCH</span>
+</div>
+</div>
+<div class="p-md">
+<div class="flex justify-between items-start mb-sm">
+<h3 class="font-h3 text-h3 text-on-surface">The Rustic Retort</h3>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-tertiary" data-icon="bookmark">bookmark</span>
+</div>
+<div class="flex flex-wrap gap-xs mb-md">
+<span class="px-xs py-[2px] bg-tertiary-container neo-border text-tertiary font-label-caps text-[10px]">AUTHENTIC</span>
+<span class="px-xs py-[2px] bg-surface-container-highest neo-border text-on-surface-variant font-label-caps text-[10px]">COZY</span>
+<span class="px-xs py-[2px] bg-surface-container-highest neo-border text-on-surface-variant font-label-caps text-[10px]">CRAFT</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">Distilled atmosphere featuring reclaimed wood surfaces and precision-mixed botanical infusions. Ideal for deep-focus conversations.</p>
+<button class="w-full py-md bg-secondary text-on-secondary font-label-caps text-label-caps uppercase neo-shadow hover:bg-secondary-fixed transition-all btn-active flex items-center justify-center gap-sm">
+                        Initiate Sequence
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Result Card 2 -->
+<div class="group bg-surface-container neo-border neo-shadow transition-all hover:translate-x-[-2px] hover:translate-y-[-2px]">
+<div class="relative h-64 overflow-hidden border-b-2 border-[#414868]">
+<img alt="Isotope Lounge" class="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 transition-all duration-500" data-alt="A futuristic underground lounge with neon teal and violet light strips tracing the geometric architecture of the walls. High-end polished metal surfaces reflect the low-light environment. Dark, plush seating is arranged in private booths, creating an atmosphere of technical precision and nocturnal luxury, consistent with a high-end research terminal aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9XBKJHMpZJOUtyHJdGqjeJoI5AvnvxVPMCX4JtYTMsUsnnJt-F5a_lhJSN8muCsaWYuSP4iDb8iqWQlo7hlJqG3ogDR_Jjawi6HbqJxbXkVl-UuyuNv3qCLphvpEinTMw-VGKKfaF48AGWvhlH1i-VM9yQqwriHwypEbCingKfjl4IOeoPnFqcjFX4zOeiZSEPj7ie1bX7dHfQfhGm-lp7wI6w4k9biS3QBpqhXn_dR515vkxzJGnNBuekFje56jSDwqsLgQonyU"/>
+<div class="absolute top-sm right-sm bg-surface-container-lowest/90 px-md py-xs neo-border">
+<span class="font-mono-data text-mono-data text-secondary">88% MATCH</span>
+</div>
+</div>
+<div class="p-md">
+<div class="flex justify-between items-start mb-sm">
+<h3 class="font-h3 text-h3 text-on-surface">Isotope Lounge</h3>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-tertiary" data-icon="bookmark">bookmark</span>
+</div>
+<div class="flex flex-wrap gap-xs mb-md">
+<span class="px-xs py-[2px] bg-tertiary-container neo-border text-tertiary font-label-caps text-[10px]">ELECTRONIC</span>
+<span class="px-xs py-[2px] bg-surface-container-highest neo-border text-on-surface-variant font-label-caps text-[10px]">MINIMAL</span>
+<span class="px-xs py-[2px] bg-surface-container-highest neo-border text-on-surface-variant font-label-caps text-[10px]">LATE NIGHT</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">A sterile, high-frequency environment specializing in molecular mixology and ambient synthesis. Surveillance-free zone.</p>
+<button class="w-full py-md bg-secondary text-on-secondary font-label-caps text-label-caps uppercase neo-shadow hover:bg-secondary-fixed transition-all btn-active flex items-center justify-center gap-sm">
+                        Initiate Sequence
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Result Card 3 -->
+<div class="group bg-surface-container neo-border neo-shadow transition-all hover:translate-x-[-2px] hover:translate-y-[-2px]">
+<div class="relative h-64 overflow-hidden border-b-2 border-[#414868]">
+<img alt="Void Terminal" class="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 transition-all duration-500" data-alt="A minimalist dark bar featuring a monolithic black granite counter illuminated by a single overhead teal light. Minimal structural elements and visible grid patterns on the walls contribute to a clinical, brutalist feel. The mood is silent and heavy, emphasizing structural honesty and a low-light nocturnal environment for power users." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc5BonI-Ha07Yga2wTsRG4zT6OiXO-BReSdxHpc1f_GhKq_V5YVz6IOhPS_3irH0ktAnmqVvDTIAV7s-8WMjgzrMlJbSC6Bvt0HuRVi15bU-lQkL226alJN7rink6OOdQ_vP2cBg7D8f-NlzeadoEBUsebhd1WD2bkfVt9hsFes9jbYxUysxBF9KQ4aUaAaZ3bs-1coROlLnVFmQcKj650Ozke6RJWQ6nzB5shX8HxIE6iRtA8tZ09B56RlXpkW2hNk_sfAwmCKe4"/>
+<div class="absolute top-sm right-sm bg-surface-container-lowest/90 px-md py-xs neo-border">
+<span class="font-mono-data text-mono-data text-secondary">85% MATCH</span>
+</div>
+</div>
+<div class="p-md">
+<div class="flex justify-between items-start mb-sm">
+<h3 class="font-h3 text-h3 text-on-surface">Void Terminal</h3>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-tertiary" data-icon="bookmark">bookmark</span>
+</div>
+<div class="flex flex-wrap gap-xs mb-md">
+<span class="px-xs py-[2px] bg-tertiary-container neo-border text-tertiary font-label-caps text-[10px]">EXPERIMENTAL</span>
+<span class="px-xs py-[2px] bg-surface-container-highest neo-border text-on-surface-variant font-label-caps text-[10px]">QUIET</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">Monolithic architecture meets sensory deprivation. The purest expression of the laboratory aesthetic in Manhattan.</p>
+<button class="w-full py-md bg-secondary text-on-secondary font-label-caps text-label-caps uppercase neo-shadow hover:bg-secondary-fixed transition-all btn-active flex items-center justify-center gap-sm">
+                        Initiate Sequence
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Result Card 4 -->
+<div class="group bg-surface-container neo-border neo-shadow transition-all hover:translate-x-[-2px] hover:translate-y-[-2px]">
+<div class="relative h-64 overflow-hidden border-b-2 border-[#414868]">
+<img alt="Binary Cellar" class="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 transition-all duration-500" data-alt="A subterranean bar with exposed brick walls painted deep matte black, accented by rows of glowing vintage server lights and teal wiring conduits. The furniture is made of heavy raw steel and salvaged lab tables. The scene is lit by soft, low-frequency blue light, creating a focused, high-clarity environment for technical discussions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2w6fvAZSSa2_IePwy3-vUEULSKUK68D063Mwz-JCDezJJ2-hrCzFx3at-5Ea792LmAT_0J2oExi7U8_-_X2-Avfx0vU8uZUJcHYflQX5AouLEph9my0faqTiI_KrGWUHm61Y2-_Azzs9irecetTfTPYPfkZtV4Dvxa4oQmhtbzr70a4a4g6Z2Le48gvgKgU6tZIyiDrqybAcLE5MRVC3CINZhnPShtTncVNrKaXdI8EIm2kBfsNB9SCcY7xzJsDynaFbfVhRuGDs"/>
+<div class="absolute top-sm right-sm bg-surface-container-lowest/90 px-md py-xs neo-border">
+<span class="font-mono-data text-mono-data text-secondary">82% MATCH</span>
+</div>
+</div>
+<div class="p-md">
+<div class="flex justify-between items-start mb-sm">
+<h3 class="font-h3 text-h3 text-on-surface">Binary Cellar</h3>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-tertiary" data-icon="bookmark">bookmark</span>
+</div>
+<div class="flex flex-wrap gap-xs mb-md">
+<span class="px-xs py-[2px] bg-tertiary-container neo-border text-tertiary font-label-caps text-[10px]">UNDERGROUND</span>
+<span class="px-xs py-[2px] bg-surface-container-highest neo-border text-on-surface-variant font-label-caps text-[10px]">INTENSE</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">Encrypted entrance protocols. High-bitrate audio and heavy structural borders define this precision social hub.</p>
+<button class="w-full py-md bg-secondary text-on-secondary font-label-caps text-label-caps uppercase neo-shadow hover:bg-secondary-fixed transition-all btn-active flex items-center justify-center gap-sm">
+                        Initiate Sequence
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 z-50 flex justify-around items-center h-20 px-4 mb-4 bg-slate-950 dark:bg-[#1A1B26] border-2 border-[#414868] mx-auto w-[90%] max-w-lg shadow-[8px_8px_0px_0px_rgba(26,27,38,0.8)]">
+<a class="flex flex-col items-center justify-center text-slate-500 p-2 hover:text-teal-200 hover:bg-slate-900 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold tracking-widest mt-1">EXPLORE</span>
+</a>
+<a class="flex flex-col items-center justify-center text-teal-400 bg-slate-900/50 p-2 border-b-2 border-teal-400 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold tracking-widest mt-1">SEARCH</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 p-2 hover:text-teal-200 hover:bg-slate-900 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold tracking-widest mt-1">SAVED</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 p-2 hover:text-teal-200 hover:bg-slate-900 active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold tracking-widest mt-1">LOGS</span>
+</a>
+</nav>
+</body></html>

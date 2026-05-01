@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#d8ca00",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#e5e2e3",
+                    "on-secondary-fixed-variant": "#8c1520",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#1f1c00",
+                    "surface-container": "#f0edee",
+                    "outline-variant": "#ccc7aa",
+                    "primary-container": "#ffee00",
+                    "on-secondary-fixed": "#410006",
+                    "outline": "#7b785f",
+                    "secondary-fixed-dim": "#ffb3b0",
+                    "inverse-surface": "#303031",
+                    "secondary-fixed": "#ffdad8",
+                    "on-tertiary-container": "#007670",
+                    "primary": "#676000",
+                    "primary-fixed-dim": "#d8ca00",
+                    "surface-container-low": "#f6f3f4",
+                    "on-background": "#1b1b1c",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#676000",
+                    "secondary": "#ae2f34",
+                    "on-primary-fixed-variant": "#4e4800",
+                    "tertiary-container": "#84fef4",
+                    "inverse-on-surface": "#f3f0f1",
+                    "tertiary": "#006a65",
+                    "tertiary-fixed": "#7cf6ec",
+                    "on-secondary-container": "#6d0010",
+                    "surface-container-highest": "#e5e2e3",
+                    "on-surface": "#1b1b1c",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#fcf8f9",
+                    "on-primary-container": "#736b00",
+                    "on-tertiary-fixed": "#00201e",
+                    "secondary-container": "#ff6b6b",
+                    "surface-container-high": "#eae7e8",
+                    "surface-dim": "#dcd9da",
+                    "on-surface-variant": "#4a4731",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#5dd9d0",
+                    "background": "#fcf8f9",
+                    "primary-fixed": "#f7e600",
+                    "surface": "#fcf8f9",
+                    "on-tertiary-fixed-variant": "#00504c",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-page": "24px",
+                    "gutter": "16px",
+                    "stack-lg": "32px",
+                    "stack-sm": "8px",
+                    "unit": "8px",
+                    "stack-md": "16px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Space Grotesk"],
+                    "body-lg": ["Inter"],
+                    "label-bold": ["Space Grotesk"],
+                    "display-xl": ["Space Grotesk"],
+                    "headline-md": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "500"}],
+                    "label-bold": ["14px", {"lineHeight": "1", "fontWeight": "700"}],
+                    "display-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.2", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neo-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+        }
+        .neo-shadow-lg {
+            box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+        }
+        .active-nav-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 bg-white dark:bg-zinc-900 border-b-4 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-zinc-900 dark:text-zinc-50" data-icon="biotech">biotech</span>
+<span class="text-2xl font-black italic bg-[#FFEE00] px-2 border-2 border-black dark:border-white font-['Space_Grotesk'] uppercase tracking-tighter">BAR_LAB.EXE</span>
+</div>
+<div class="flex gap-4">
+<button class="hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all active:translate-x-[4px] active:translate-y-[4px] active:shadow-none bg-white border-2 border-black p-2 flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="filter_list">filter_list</span>
+</button>
+</div>
+</header>
+<main class="px-margin-page pt-stack-lg">
+<!-- Main Title -->
+<div class="mb-stack-lg">
+<h1 class="font-display-xl text-display-xl uppercase italic">SAVED_SPECIMENS</h1>
+<div class="h-2 w-32 bg-primary-container border-2 border-black mt-2"></div>
+</div>
+<!-- Favorites Grid -->
+<section class="mb-stack-lg">
+<div class="flex justify-between items-center mb-stack-md">
+<h2 class="font-headline-md text-headline-md uppercase">ACTIVE_EXPERIMENTS</h2>
+<span class="font-label-bold text-label-bold bg-secondary-container text-on-secondary-container px-3 py-1 border-2 border-black rounded-full">4 SAVED</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Specimen Card 1 -->
+<div class="bg-white border-4 border-black rounded-lg p-stack-md neo-shadow hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none transition-all cursor-pointer group">
+<div class="flex gap-4">
+<div class="w-24 h-24 shrink-0 border-2 border-black overflow-hidden rounded-md">
+<img class="w-full h-full object-cover" data-alt="A moody, high-contrast interior of a futuristic neon-lit bar with glowing amber chemicals in glassware on the counter. The atmosphere is experimental and sophisticated with sharp shadows and vibrant yellow accents that match a modern laboratory aesthetic. Electric energy permeates the dimly lit urban space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGUULpnQlI5uIMm0r-fA3AgIuTS2t4FqWMEGL9c9lg9lPy7qXDxiwhn7fr4hwgNfvvE9doYXeutJ8R_oAu_QYZFbtSQwObtp1N38RFrIvGJ0c_g_JtHbBSPeqlLXDObDRyZKVb22SwjVv1Ex29WQZdrOC3kzw-heifVGou3AXE6B8lAedt3ETiJbkBi25Dup_ahGtQS2V3utpmIH3yH4OjS41foqFldo9zxcmXQbJU1L9esu404iWKBREME0S_sqJmTTkBsVFfs5Y"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md leading-none border-b-4 border-primary-container inline-block mb-1">CYBER_CASK</h3>
+<p class="text-body-md text-zinc-600">DISTRICT_09 / NEON_INFUSED</p>
+</div>
+<div class="flex justify-between items-end">
+<span class="font-label-bold text-label-bold text-tertiary">STABILITY: HIGH</span>
+<button class="material-symbols-outlined text-secondary" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Specimen Card 2 -->
+<div class="bg-white border-4 border-black rounded-lg p-stack-md neo-shadow hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none transition-all cursor-pointer">
+<div class="flex gap-4">
+<div class="w-24 h-24 shrink-0 border-2 border-black overflow-hidden rounded-md">
+<img class="w-full h-full object-cover" data-alt="A brightly lit laboratory-style bar counter featuring stainless steel surfaces and vibrant green liquid cocktails served in test tubes. The lighting is crisp and surgical, emphasizing a clean yet irreverent nightlife vibe. Bold black borders and yellow primary elements create a high-contrast Neo-Brutalist visual impact." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOhqmFWV-ZbIUOWEE7e7wqbG8sKB5t97vIhZCUAfXTpKnzH1apfO1m2gRamE7mBfFtgoySZXqJKAlFcAFPuPVfJBVn7gi_Lm5jPaaW3k4ktSPG7vmAP4zLlB95QzErU1lYjmtNNrRggENqY-yu2v85C9ikgkulPmWo6L1x0MxNqrvgAVr_natqxeZowju3KCbpNkLk5Ih1uaZI9g_1aWr8ckR2Zc-WedN1VQbVLxYq1zDHZo3VvHlFF9eNfQs-50yTpK4S4xX5DVI"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md leading-none border-b-4 border-primary-container inline-block mb-1">FLASK_HOUSE</h3>
+<p class="text-body-md text-zinc-600">THE_PLAZA / VOLATILE</p>
+</div>
+<div class="flex justify-between items-end">
+<span class="font-label-bold text-label-bold text-secondary">NEAR_CAPACITY</span>
+<button class="material-symbols-outlined text-secondary" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Specimen Card 3 -->
+<div class="bg-white border-4 border-black rounded-lg p-stack-md neo-shadow hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none transition-all cursor-pointer">
+<div class="flex gap-4">
+<div class="w-24 h-24 shrink-0 border-2 border-black overflow-hidden rounded-md">
+<img class="w-full h-full object-cover" data-alt="An industrial bar setting with exposed concrete walls and heavy metal furniture illuminated by harsh, direct yellow spotlighting. The scene feels like an underground urban experiment, featuring high-contrast textures and a raw, structural aesthetic. The mood is rebellious and energetic, typical of a high-stakes night out." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrFRN2GOImjTWTwHpnSg_Y5TlkC-4pMSvJJx2qrx7GuK6fiRy81rkObF8BLwUR57bnhnBbfSHtZlMdeZLjQFaTUaiUbeIce_Tr75SlTRzTr7wcBfeQhO5G32GtG7AhWgPcaEU4bMZOsokm9WLguWNb5eQ6rbDRVexeBF_IG5czJuSxQnlKtLvPjbt7L8g25EBuoKgQJ8Pf_hIw6-fzr-jE4RvGS2yMm-q0iKiBwwVgyhR17Wfu7KeDNxFSoJCv2KBr6bLO4SPhpAY"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md leading-none border-b-4 border-primary-container inline-block mb-1">RAW_ELEMENT</h3>
+<p class="text-body-md text-zinc-600">NORTH_CORE / TECHNO</p>
+</div>
+<div class="flex justify-between items-end">
+<span class="font-label-bold text-label-bold text-tertiary">HAPPY_HOUR</span>
+<button class="material-symbols-outlined text-secondary" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Specimen Card 4 -->
+<div class="bg-white border-4 border-black rounded-lg p-stack-md neo-shadow hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none transition-all cursor-pointer">
+<div class="flex gap-4">
+<div class="w-24 h-24 shrink-0 border-2 border-black overflow-hidden rounded-md">
+<img class="w-full h-full object-cover" data-alt="A close-up of a bubbling, effervescent cocktail in a laboratory beaker, surrounded by dry ice vapor in a dark, high-contrast bar environment. Sharp focal points on the glassware emphasize the scientific approach to mixology. The color palette is dominated by deep blacks and vibrant yellow glows, creating a sense of adrenaline and discovery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGWUH_fSwDTzVCwIfMOwhsbp-Pv4Z5jaf4KyWKWph2ikxvC02GnoOl5YkMHu1Ge6FdJLoUXfJ9_sWoMQg44KX7EfOXgVkzwah6TAYPsHaPdNZWdAbzJRI4uIhEQE72JNzvrwLVqTTWEOhd-GPpcc6tKZ3Kak9Z1Wkr5in5sXlwsFySoUCos6c1o4s4AaZOH9DZ99EzgWWi9oWkH-yvQ6a5Fz3tCBXTCVAnADKewNv6uLFgxfvjmm8jQkzsuUPJ1gTU-sV3-BQfu3c"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md leading-none border-b-4 border-primary-container inline-block mb-1">OZONE_LIFT</h3>
+<p class="text-body-md text-zinc-600">SKY_LOUNGE / HIGH_ALT</p>
+</div>
+<div class="flex justify-between items-end">
+<span class="font-label-bold text-label-bold text-zinc-500">STABLE</span>
+<button class="material-symbols-outlined text-secondary" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Recently Visited Section -->
+<section class="mb-stack-lg">
+<div class="flex justify-between items-center mb-stack-md">
+<h2 class="font-headline-md text-headline-md uppercase">PAST_TRIALS</h2>
+<button class="font-label-bold text-label-bold underline decoration-4 decoration-primary-container">CLEAR_LOGS</button>
+</div>
+<div class="flex overflow-x-auto gap-gutter pb-4 scrollbar-hide">
+<!-- Visited Bar 1 -->
+<div class="min-w-[280px] bg-surface-container-low border-4 border-black rounded-lg p-stack-md neo-shadow hover:rotate-1 transition-transform">
+<div class="flex items-start gap-4">
+<div class="w-16 h-16 shrink-0 border-2 border-black rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A minimalist circular view of a modern cocktail bar with a sleek black countertop and yellow neon accents. The lighting is focused and dramatic, highlighting a single crystal glass with a clear, sparkling beverage. The overall style is modern laboratory aesthetic with a neo-brutalist high-contrast edge." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWaDIzjQxMt7PmD9OuaAsZmjgeol2ko0RS34tlSEX_6-5jDf3KQVt5EtGpcY8IZsaiNl0CuQTRoucsJDqqVbiT2csOhDRyrFUvi8x-G4JvL27i_nUCKIHEczGx52xsqYfOwZh-GTDNqnyIeH7iByLyzP3wM-LiWKVUJ500OBolxE0ofLfNXj5xEXvbanpz3t6XxW1Zg5hbVE3piiS_G4NGWEo0Hl3qj6VxgemKLcux98Wtn7QeZoY0i6f0bqYzPwsqrJGCciIlq48"/>
+</div>
+<div class="flex-1">
+<h4 class="font-label-bold text-label-bold uppercase">THE_ISOTOPE</h4>
+<p class="text-[12px] font-body-md text-zinc-500 mb-2">VISITED 2H AGO</p>
+<div class="flex gap-2">
+<span class="text-[10px] font-bold px-2 border border-black bg-white">PH: 4.5</span>
+<span class="text-[10px] font-bold px-2 border border-black bg-white">VOL: HIGH</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Visited Bar 2 -->
+<div class="min-w-[280px] bg-surface-container-low border-4 border-black rounded-lg p-stack-md neo-shadow hover:-rotate-1 transition-transform">
+<div class="flex items-start gap-4">
+<div class="w-16 h-16 shrink-0 border-2 border-black rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A round porthole view into a dense, crowded bar atmosphere with deep red lighting and silhouettes of people moving. The energy is intense and kinetic, framed by a thick black structural border. High contrast and electric mood define this urban night scene, reflecting the brand's irreverent and experimental spirit." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCmZpkeuoQvF52KOjk6c7DBh0Lk4QO2oGDuDAYOqft7hKS1H5U8DkoPKIjIl5RDpbdijmZhMboAcgjqHb0vg1PP0EIdRgnd-5plr_c1C0b4-l9CKeqMT1HywzrMmTfFu6p7c7fzshVXXh6KZEtYZXmce69M4A6dnNrOiT5d6sfVo3njMQto2i-pPcPktzAd9nb3NnB-itxA0lBllVYyBlrPvuSJG-uccIBzVfe4-1KxfBqQCatNxRvKk9j2tkpMamOyLM-tBae1ro"/>
+</div>
+<div class="flex-1">
+<h4 class="font-label-bold text-label-bold uppercase">NUCLEUS_PUB</h4>
+<p class="text-[12px] font-body-md text-zinc-500 mb-2">VISITED 14H AGO</p>
+<div class="flex gap-2">
+<span class="text-[10px] font-bold px-2 border border-black bg-white">TEMP: HOT</span>
+<span class="text-[10px] font-bold px-2 border border-black bg-white">DENSITY: MAX</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Lab Stats / Floating HUD -->
+<div class="fixed bottom-32 right-6 z-40 bg-[#FFEE00] border-4 border-black p-4 neo-shadow rounded-lg animate-bounce duration-[3000ms]">
+<p class="font-label-bold text-[10px] uppercase leading-none mb-1">TOTAL_DATA_POINTS</p>
+<p class="font-display-xl text-2xl leading-none">1,284_CC</p>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md z-50 flex justify-around items-center h-20 px-4 bg-white dark:bg-zinc-900 border-4 border-black dark:border-white rounded-full shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+<div class="flex flex-col items-center justify-center p-2 text-zinc-900 dark:text-zinc-50 hover:bg-[#4ECDC4] transition-colors active:translate-y-0 active:shadow-none cursor-pointer">
+<span class="material-symbols-outlined" data-icon="home_app_logo">home_app_logo</span>
+<span class="font-['Space_Grotesk'] font-bold text-[12px] uppercase">EXPLORE</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 text-zinc-900 dark:text-zinc-50 hover:bg-[#4ECDC4] transition-colors active:translate-y-0 active:shadow-none cursor-pointer">
+<span class="material-symbols-outlined" data-icon="manage_search">manage_search</span>
+<span class="font-['Space_Grotesk'] font-bold text-[12px] uppercase">SEARCH</span>
+</div>
+<div class="bg-[#FFEE00] text-black border-2 border-black rounded-full p-2 translate-y-[-4px] active:translate-y-0 active:shadow-none cursor-pointer flex flex-col items-center justify-center min-w-[72px]">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-['Space_Grotesk'] font-bold text-[12px] uppercase">SAVED</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 text-zinc-900 dark:text-zinc-50 hover:bg-[#4ECDC4] transition-colors active:translate-y-0 active:shadow-none cursor-pointer">
+<span class="material-symbols-outlined" data-icon="database">database</span>
+<span class="font-['Space_Grotesk'] font-bold text-[12px] uppercase">LOGS</span>
+</div>
+</nav>
+</body></html>

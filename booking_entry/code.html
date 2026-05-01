@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>THE NEON FLASK | RESERVATION PROTOCOL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #0e1224;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#00363f",
+                        "outline": "#919096",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#624000",
+                        "on-primary-fixed-variant": "#454652",
+                        "tertiary": "#f0be75",
+                        "tertiary-container": "#291800",
+                        "on-background": "#dee1fb",
+                        "inverse-primary": "#5d5d6a",
+                        "primary-fixed": "#e2e1f1",
+                        "on-surface-variant": "#c8c5cc",
+                        "on-surface": "#dee1fb",
+                        "surface-container-high": "#25293c",
+                        "on-tertiary-container": "#a77c3a",
+                        "secondary-container": "#00b6d0",
+                        "on-primary-fixed": "#1a1b26",
+                        "surface-tint": "#c6c5d4",
+                        "primary-container": "#1a1b26",
+                        "surface-bright": "#34384c",
+                        "on-primary-container": "#838391",
+                        "inverse-on-surface": "#2b2f43",
+                        "surface": "#0e1224",
+                        "on-secondary-fixed-variant": "#004e5b",
+                        "primary-fixed-dim": "#c6c5d4",
+                        "inverse-surface": "#dee1fb",
+                        "background": "#0e1224",
+                        "tertiary-fixed-dim": "#f0be75",
+                        "surface-container": "#1b1f31",
+                        "secondary-fixed": "#a6eeff",
+                        "secondary-fixed-dim": "#4ad7f3",
+                        "on-tertiary-fixed": "#291800",
+                        "secondary": "#4ad7f3",
+                        "on-tertiary": "#442b00",
+                        "surface-container-highest": "#303447",
+                        "error-container": "#93000a",
+                        "surface-dim": "#0e1224",
+                        "on-secondary-container": "#00424d",
+                        "surface-variant": "#303447",
+                        "outline-variant": "#47464c",
+                        "primary": "#c6c5d4",
+                        "error": "#ffb4ab",
+                        "on-secondary-fixed": "#001f25",
+                        "on-error": "#690005",
+                        "surface-container-lowest": "#090d1f",
+                        "surface-container-low": "#161b2d",
+                        "on-primary": "#2f303b",
+                        "tertiary-fixed": "#ffddb2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "gutter": "20px",
+                        "xs": "8px",
+                        "margin": "32px",
+                        "lg": "40px",
+                        "sm": "16px",
+                        "base": "4px",
+                        "xl": "64px"
+                    },
+                    "fontFamily": {
+                        "h3": ["Space Grotesk"],
+                        "label-caps": ["Space Grotesk"],
+                        "mono-data": ["Space Grotesk"],
+                        "h1": ["Space Grotesk"],
+                        "h2": ["Space Grotesk"],
+                        "body-md": ["Space Grotesk"],
+                        "body-lg": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "mono-data": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "h2": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<!-- Top Navigation Anchor -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-slate-950 border-b-2 border-slate-700">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-teal-400 cursor-pointer active:translate-y-0.5 transition-all">arrow_back</span>
+<h1 class="text-lg font-bold text-teal-400 tracking-widest font-h3 uppercase">CYBER-LAB TERMINAL</h1>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-teal-400 font-label-caps text-xs hidden md:block">LINK_ESTABLISHED</span>
+<span class="material-symbols-outlined text-teal-400 cursor-pointer">account_circle</span>
+</div>
+</header>
+<main class="mt-24 px-6 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-lg">
+<!-- Hero Visual Section -->
+<section class="lg:col-span-12 mb-sm">
+<div class="relative w-full h-64 overflow-hidden rounded-lg border-2 border-slate-700">
+<img alt="The Neon Flask Laboratory" class="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700" data-alt="A cinematic low-light shot of a futuristic cocktail laboratory bar called The Neon Flask. Glowing teal and soft violet liquid bubbles inside scientific glassware and beakers on a dark slate countertop. The atmosphere is industrial and mysterious, with cold metal surfaces and visible pipes illuminated by sharp neon accents. Dim volumetric lighting creates a moody, high-end technical environment for researchers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSLNDqGfbGeniBg4XWKlf8qh-tIHKvuT16PG0RBhYPTTrW-g-X4hu0FO33JGTG6MMNf_wbT-AJQ2F_giv5eWrqf4s5u24rqrfOwuRD-3BKlQGqNj6BusSu_3wYpMsR0wMtB0kiPHjBcR7dwgdWJG1P5VOWNPMAUc8d84em_8mJUgCuI_5NzGgkmlTuhMBM4YtAXsWYxL7RBw44XKeS0Kn0Bkmdy-8oWOFVFrsB1WIWulgvZg-TLhi4wZ0TEKpJSUblNwb2oLJsbYA"/>
+<div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-slate-950 to-transparent w-full">
+<h2 class="font-h1 text-teal-400 uppercase">THE NEON FLASK</h2>
+<p class="font-body-md text-on-surface-variant max-w-xl">ESTABLISHING RESERVATION PROTOCOL: EXPERIMENTAL MIXOLOGY PHASE 04.</p>
+</div>
+</div>
+</section>
+<!-- Form Sections -->
+<div class="lg:col-span-8 space-y-lg">
+<!-- Step 1: Temporal Alignment (Date) -->
+<div class="p-sm bg-surface-container border-2 border-slate-700 relative">
+<div class="absolute -top-3 left-4 bg-background px-2 font-label-caps text-teal-400 text-[10px]">PROTOCOL_01: DATE_SELECTION</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-sm items-start">
+<div class="space-y-sm">
+<p class="font-label-caps text-slate-400">SELECT CALENDAR DATA</p>
+<div class="grid grid-cols-7 gap-1 p-2 bg-slate-950 border border-slate-800 rounded">
+<!-- Minimalist Calendar Mockup -->
+<div class="text-center text-[10px] text-teal-500 font-bold py-1">M</div>
+<div class="text-center text-[10px] text-teal-500 font-bold py-1">T</div>
+<div class="text-center text-[10px] text-teal-500 font-bold py-1">W</div>
+<div class="text-center text-[10px] text-teal-500 font-bold py-1">T</div>
+<div class="text-center text-[10px] text-teal-500 font-bold py-1">F</div>
+<div class="text-center text-[10px] text-teal-500 font-bold py-1">S</div>
+<div class="text-center text-[10px] text-teal-500 font-bold py-1">S</div>
+<div class="py-2 text-center text-slate-600 text-xs opacity-50">28</div>
+<div class="py-2 text-center text-slate-600 text-xs opacity-50">29</div>
+<div class="py-2 text-center text-slate-600 text-xs opacity-50">30</div>
+<div class="py-2 text-center text-on-surface text-xs hover:bg-slate-800 cursor-pointer">1</div>
+<div class="py-2 text-center text-on-surface text-xs hover:bg-slate-800 cursor-pointer">2</div>
+<div class="py-2 text-center text-on-surface text-xs hover:bg-slate-800 cursor-pointer">3</div>
+<div class="py-2 text-center text-on-surface text-xs hover:bg-slate-800 cursor-pointer">4</div>
+<div class="py-2 text-center bg-teal-400 text-slate-950 font-bold text-xs cursor-pointer shadow-[2px_2px_0px_#1a1b26]">5</div>
+<div class="py-2 text-center text-on-surface text-xs hover:bg-slate-800 cursor-pointer">6</div>
+<div class="py-2 text-center text-on-surface text-xs hover:bg-slate-800 cursor-pointer">7</div>
+<div class="py-2 text-center text-on-surface text-xs hover:bg-slate-800 cursor-pointer">8</div>
+<div class="py-2 text-center text-on-surface text-xs hover:bg-slate-800 cursor-pointer">9</div>
+<div class="py-2 text-center text-on-surface text-xs hover:bg-slate-800 cursor-pointer">10</div>
+<div class="py-2 text-center text-on-surface text-xs hover:bg-slate-800 cursor-pointer">11</div>
+</div>
+</div>
+<div class="space-y-sm">
+<p class="font-label-caps text-slate-400">PARTICIPANT COUNT</p>
+<div class="flex items-center gap-xs">
+<button class="w-12 h-12 flex items-center justify-center border-2 border-slate-700 bg-slate-950 text-teal-400 active:translate-y-0.5 transition-all">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<div class="flex-1 h-12 flex items-center justify-center border-2 border-teal-400 bg-slate-900 font-mono-data text-2xl text-teal-400">
+                                04
+                            </div>
+<button class="w-12 h-12 flex items-center justify-center border-2 border-slate-700 bg-slate-950 text-teal-400 active:translate-y-0.5 transition-all">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<div class="p-xs bg-slate-900/50 border border-slate-800">
+<p class="text-[10px] text-slate-500 italic">MAX CAPACITY PER EXPERIMENTAL POD: 08 PARTICIPANTS</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 2: Slot Allocation (Time) -->
+<div class="p-sm bg-surface-container border-2 border-slate-700 relative">
+<div class="absolute -top-3 left-4 bg-background px-2 font-label-caps text-teal-400 text-[10px]">PROTOCOL_02: TEMPORAL_WINDOW</div>
+<p class="font-label-caps text-slate-400 mb-sm text-[10px]">AVAILABLE TIME SLOTS (LOCAL SYNC)</p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-xs">
+<button class="p-2 text-sm border-2 border-slate-700 bg-slate-950 text-slate-400 font-mono-data hover:border-teal-400 transition-colors">19:00</button>
+<button class="p-2 text-sm border-2 border-teal-400 bg-teal-400 text-slate-950 font-bold font-mono-data shadow-[4px_4px_0px_rgba(26,27,38,0.5)]">19:30</button>
+<button class="p-2 text-sm border-2 border-slate-700 bg-slate-950 text-slate-400 font-mono-data hover:border-teal-400 transition-colors">20:00</button>
+<button class="p-2 text-sm border-2 border-slate-700 bg-slate-950 text-slate-400 font-mono-data hover:border-teal-400 transition-colors">20:30</button>
+<button class="p-2 text-sm border-2 border-slate-800 bg-slate-900 text-slate-800 font-mono-data cursor-not-allowed italic" disabled="">21:00 [X]</button>
+<button class="p-2 text-sm border-2 border-slate-800 bg-slate-900 text-slate-800 font-mono-data cursor-not-allowed italic" disabled="">21:30 [X]</button>
+<button class="p-2 text-sm border-2 border-slate-700 bg-slate-950 text-slate-400 font-mono-data hover:border-teal-400 transition-colors">22:00</button>
+<button class="p-2 text-sm border-2 border-slate-700 bg-slate-950 text-slate-400 font-mono-data hover:border-teal-400 transition-colors">22:30</button>
+</div>
+</div>
+<!-- Additional Options -->
+<div class="p-sm bg-surface-container border-2 border-slate-700 relative">
+<div class="absolute -top-3 left-4 bg-background px-2 font-label-caps text-teal-400 text-[10px]">PROTOCOL_03: SPECIAL_PARAMETERS</div>
+<div class="space-y-sm">
+<div class="flex items-center gap-sm p-xs border border-slate-800 hover:border-slate-600 cursor-pointer transition-colors group">
+<div class="w-6 h-6 border-2 border-teal-400 bg-slate-950 flex items-center justify-center">
+<span class="material-symbols-outlined text-teal-400 scale-75" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="flex-1">
+<p class="font-mono-data text-xs text-on-surface">IMMERSIVE_CHEMISTRY_UPGRADE</p>
+<p class="text-[10px] text-slate-500">Includes 2 bespoke molecular cocktails per participant (+ $45.00)</p>
+</div>
+</div>
+<div class="flex items-center gap-sm p-xs border border-slate-800 hover:border-slate-600 cursor-pointer transition-colors group">
+<div class="w-6 h-6 border-2 border-slate-700 bg-slate-950 flex items-center justify-center"></div>
+<div class="flex-1">
+<p class="font-mono-data text-xs text-on-surface">BIO-HAZARD_CLEANROOM_SEATING</p>
+<p class="text-[10px] text-slate-500">Isolated booth with HEPA filtration and UV-C ambient sterilization (+ $20.00)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sidebar Summary -->
+<aside class="lg:col-span-4">
+<div class="sticky top-24 space-y-sm">
+<div class="p-sm bg-slate-950 border-2 border-teal-400 shadow-[8px_8px_0px_rgba(0,182,208,0.1)] relative">
+<div class="absolute -top-3 left-4 bg-slate-950 px-2 font-label-caps text-teal-400 text-[10px]">DOSSIER_SUMMARY</div>
+<div class="space-y-sm">
+<div class="flex justify-between items-end border-b border-slate-800 pb-2">
+<div>
+<p class="text-[10px] text-slate-500 uppercase font-bold">Location</p>
+<p class="font-mono-data text-sm text-teal-200">SECTOR_7 / THE NEON FLASK</p>
+</div>
+</div>
+<div class="flex justify-between items-end border-b border-slate-800 pb-2">
+<div>
+<p class="text-[10px] text-slate-500 uppercase font-bold">Temporal Sync</p>
+<p class="font-mono-data text-sm text-teal-200">OCT_05 / 19:30 HRS</p>
+</div>
+</div>
+<div class="flex justify-between items-end border-b border-slate-800 pb-2">
+<div>
+<p class="text-[10px] text-slate-500 uppercase font-bold">Subjects</p>
+<p class="font-mono-data text-sm text-teal-200">04 PARTICIPANTS</p>
+</div>
+<p class="font-mono-data text-sm text-slate-400">$100.00</p>
+</div>
+<div class="flex justify-between items-end border-b border-slate-800 pb-2">
+<div>
+<p class="text-[10px] text-slate-500 uppercase font-bold">Laboratory Fee</p>
+<p class="font-mono-data text-sm text-teal-200">IMMERSIVE_UPGRADE (X4)</p>
+</div>
+<p class="font-mono-data text-sm text-slate-400">$180.00</p>
+</div>
+<div class="pt-sm space-y-xs">
+<div class="flex justify-between items-center text-tertiary">
+<p class="font-label-caps text-xs">SUBTOTAL_ESTIMATE</p>
+<p class="font-mono-data text-lg font-bold">$280.00</p>
+</div>
+<div class="p-xs bg-tertiary/10 border border-tertiary/30">
+<p class="text-[9px] text-tertiary leading-tight uppercase font-bold italic">Verification required: Final cost subject to reagent volatility and market exchange.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="p-sm bg-surface-container border-2 border-slate-700">
+<p class="font-label-caps text-slate-500 text-[9px] mb-2">SYSTEM_LOGS</p>
+<div class="font-mono-data text-[10px] text-slate-600 space-y-1">
+<p>[14:22:01] Scanning availability... OK</p>
+<p>[14:22:03] Loading temporal grid... OK</p>
+<p>[14:22:05] Awaiting protocol confirmation...</p>
+</div>
+</div>
+</div>
+</aside>
+</main>
+<!-- Fixed Bottom Action & Navigation Cluster -->
+<div class="fixed bottom-0 left-0 w-full z-50 pointer-events-none">
+<div class="max-w-7xl mx-auto px-6 pb-6 pointer-events-auto">
+<button class="w-full h-16 bg-teal-400 text-slate-950 font-h2 uppercase tracking-widest border-2 border-slate-900 shadow-[6px_6px_0px_#414868] active:translate-y-1 active:shadow-none transition-all flex items-center justify-center gap-4">
+<span class="material-symbols-outlined font-bold">verified_user</span>
+                CONFIRM PROTOCOL
+            </button>
+</div>
+<!-- Shared Bottom Nav Component -->
+<nav class="h-20 bg-slate-950 border-t-2 border-slate-700 flex justify-around items-center px-4 pointer-events-auto">
+<div class="flex flex-col items-center justify-center text-slate-500 p-2 hover:bg-slate-900 hover:text-teal-200 cursor-pointer active:translate-y-0.5 transition-transform">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="font-space-grotesk text-[10px] font-bold tracking-tighter uppercase">EXPLORE</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 p-2 hover:bg-slate-900 hover:text-teal-200 cursor-pointer active:translate-y-0.5 transition-transform">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-space-grotesk text-[10px] font-bold tracking-tighter uppercase">MAPS</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-teal-400 text-slate-950 p-2 scale-95 border-b-2 border-r-2 border-slate-900 cursor-pointer active:translate-y-0.5 transition-transform">
+<span class="material-symbols-outlined" data-icon="event_available">event_available</span>
+<span class="font-space-grotesk text-[10px] font-bold tracking-tighter uppercase">RESERVATIONS</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 p-2 hover:bg-slate-900 hover:text-teal-200 cursor-pointer active:translate-y-0.5 transition-transform">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-space-grotesk text-[10px] font-bold tracking-tighter uppercase">SYSTEMS</span>
+</div>
+</nav>
+</div>
+</body></html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#d8ca00",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#e5e2e3",
+                    "on-secondary-fixed-variant": "#8c1520",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#1f1c00",
+                    "surface-container": "#f0edee",
+                    "outline-variant": "#ccc7aa",
+                    "primary-container": "#ffee00",
+                    "on-secondary-fixed": "#410006",
+                    "outline": "#7b785f",
+                    "secondary-fixed-dim": "#ffb3b0",
+                    "inverse-surface": "#303031",
+                    "secondary-fixed": "#ffdad8",
+                    "on-tertiary-container": "#007670",
+                    "primary": "#676000",
+                    "primary-fixed-dim": "#d8ca00",
+                    "surface-container-low": "#f6f3f4",
+                    "on-background": "#1b1b1c",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#676000",
+                    "secondary": "#ae2f34",
+                    "on-primary-fixed-variant": "#4e4800",
+                    "tertiary-container": "#84fef4",
+                    "inverse-on-surface": "#f3f0f1",
+                    "tertiary": "#006a65",
+                    "tertiary-fixed": "#7cf6ec",
+                    "on-secondary-container": "#6d0010",
+                    "surface-container-highest": "#e5e2e3",
+                    "on-surface": "#1b1b1c",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#fcf8f9",
+                    "on-primary-container": "#736b00",
+                    "on-tertiary-fixed": "#00201e",
+                    "secondary-container": "#ff6b6b",
+                    "surface-container-high": "#eae7e8",
+                    "surface-dim": "#dcd9da",
+                    "on-surface-variant": "#4a4731",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#5dd9d0",
+                    "background": "#fcf8f9",
+                    "primary-fixed": "#f7e600",
+                    "surface": "#fcf8f9",
+                    "on-tertiary-fixed-variant": "#00504c",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-page": "24px",
+                    "gutter": "16px",
+                    "stack-lg": "32px",
+                    "stack-sm": "8px",
+                    "unit": "8px",
+                    "stack-md": "16px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Space Grotesk"],
+                    "body-lg": ["Inter"],
+                    "label-bold": ["Space Grotesk"],
+                    "display-xl": ["Space Grotesk"],
+                    "headline-md": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .neo-shadow { shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] }
+        .neo-shadow-lg { shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 bg-white dark:bg-zinc-900 border-b-4 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-zinc-900 dark:text-zinc-50" data-icon="biotech">biotech</span>
+<h1 class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-zinc-900 dark:text-zinc-50">BAR_LAB.EXE</h1>
+</div>
+<div class="text-2xl font-black italic bg-[#FFEE00] px-2 border-2 border-black dark:border-white text-zinc-900">
+            SPECIMEN_092
+        </div>
+</header>
+<main class="max-w-4xl mx-auto px-margin-page mt-stack-lg">
+<!-- Hero Section -->
+<section class="relative group">
+<div class="w-full aspect-[16/9] overflow-hidden rounded-lg border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] relative">
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" data-alt="A moody, cinematic photograph of a dimly lit luxury bar with rich dark wood panels and amber-colored lighting reflecting off crystal decanters. The atmosphere is intimate and sophisticated, featuring leather-bound seating and a quiet, hazy glow from vintage filament bulbs. The overall aesthetic is neo-brutalist with high-contrast shadows and a deep, warm color palette that emphasizes a sense of hidden luxury and quiet experimentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC72T1dsipWG-u1RVFhsHQu00X0ZDmpbnH4bywaAWg_8FADXsM5PSQWEEDNkLp7z3asNJTdWHyBUO30wriVE3qmBwqvVe6ZIcNK2-ujdjyLu6_sySfoLSSuFywwBtfZJg5d768INZeRj8-78xcS_PdyLFG_9dZ3yXwtIH2AmT7qEtaS0wRvyT6UkqFaV52VOAf_sDCwE6JKPQSwK8giibyvvk-G2y33jWc-XMbL7TzVx5Ke60NUv2WVtNzLOfhLEaegNImTYKolJFM"/>
+<div class="absolute top-4 left-4">
+<span class="bg-[#FFEE00] text-black font-label-bold px-4 py-2 border-2 border-black rounded-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        Verified Specimen
+                    </span>
+</div>
+</div>
+</section>
+<!-- Title & Description Header -->
+<section class="mt-stack-lg">
+<h2 class="font-display-xl text-display-xl uppercase italic mb-stack-sm">
+                THE RUSTIC RETORT
+            </h2>
+<div class="h-2 w-48 bg-primary-container border-2 border-black mb-stack-md"></div>
+<p class="font-body-lg text-body-lg max-w-2xl leading-relaxed">
+                A hidden gem for the serious experimenter. Perfect for deep conversations over aged scotch. This laboratory space prioritizes sensory analysis over social noise.
+            </p>
+</section>
+<!-- Metrics Grid (Bento Style) -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-gutter mt-stack-lg">
+<!-- Vibe Card -->
+<div class="bg-tertiary-container p-stack-md border-4 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+<span class="font-label-bold text-label-bold uppercase text-on-tertiary-fixed-variant block mb-2">Atmospheric Vibe</span>
+<div class="flex items-end gap-2">
+<span class="font-display-xl text-display-xl leading-none">95%</span>
+<span class="font-headline-md text-headline-md pb-1 uppercase">Cozy</span>
+</div>
+<div class="mt-4 h-3 bg-white/50 border-2 border-black overflow-hidden">
+<div class="h-full bg-tertiary w-[95%]"></div>
+</div>
+</div>
+<!-- Price Card -->
+<div class="bg-surface-container-high p-stack-md border-4 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+<span class="font-label-bold text-label-bold uppercase text-outline block mb-2">Cost Index</span>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">attach_money</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">attach_money</span>
+<span class="material-symbols-outlined text-outline">attach_money</span>
+<span class="material-symbols-outlined text-outline">attach_money</span>
+</div>
+<span class="font-headline-md text-headline-md uppercase block">Moderate</span>
+</div>
+<!-- Noise Card -->
+<div class="bg-secondary-container p-stack-md border-4 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+<span class="font-label-bold text-label-bold uppercase text-on-secondary-container block mb-2">Acoustics</span>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[40px]">volume_down</span>
+<span class="font-headline-md text-headline-md uppercase">Low Noise</span>
+</div>
+<p class="font-label-bold text-[12px] mt-2 text-on-secondary-container/80 italic">Optimized for private data exchange.</p>
+</div>
+</section>
+<!-- Specimen Data Section -->
+<section class="mt-stack-lg border-t-4 border-black pt-stack-lg">
+<div class="flex flex-col md:flex-row gap-stack-lg">
+<div class="flex-1 space-y-stack-md">
+<h3 class="font-headline-md text-headline-md uppercase flex items-center gap-2">
+<span class="material-symbols-outlined">analytics</span>
+                        Chemical Composition
+                    </h3>
+<div class="flex flex-wrap gap-2">
+<span class="bg-white border-2 border-black px-3 py-1 font-label-bold rounded-full">AGED SCOTCH</span>
+<span class="bg-white border-2 border-black px-3 py-1 font-label-bold rounded-full">BITTERS RECLAMATION</span>
+<span class="bg-white border-2 border-black px-3 py-1 font-label-bold rounded-full">OAK AROMATICS</span>
+<span class="bg-white border-2 border-black px-3 py-1 font-label-bold rounded-full">NEATHER UPHOLSTERY</span>
+</div>
+</div>
+<div class="flex-1">
+<div class="bg-white p-6 border-4 border-black rounded-lg shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden">
+<div class="absolute -right-4 -top-4 opacity-10">
+<span class="material-symbols-outlined text-[120px]">science</span>
+</div>
+<h3 class="font-label-bold text-label-bold uppercase mb-4 underline decoration-[#FFEE00] decoration-4">Laboratory Hours</h3>
+<ul class="space-y-2 font-body-md text-body-md">
+<li class="flex justify-between border-b border-zinc-200 pb-1"><span>Mon - Thu</span> <span class="font-bold">17:00 - 01:00</span></li>
+<li class="flex justify-between border-b border-zinc-200 pb-1"><span>Fri - Sat</span> <span class="font-bold">16:00 - 03:00</span></li>
+<li class="flex justify-between"><span>Sunday</span> <span class="font-bold">Closed</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Action HUD -->
+<section class="fixed bottom-32 left-0 right-0 z-40 px-6 pointer-events-none">
+<div class="max-w-4xl mx-auto flex gap-4 justify-end pointer-events-auto">
+<!-- Mini HUD info -->
+<div class="hidden md:flex flex-col items-end justify-center px-4 py-2 bg-white border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] animate-bounce duration-[2000ms]">
+<span class="text-[10px] font-black uppercase tracking-widest text-zinc-500">Live Status</span>
+<span class="text-sm font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                        NEAR CAPACITY
+                    </span>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Actions & Navigation Container -->
+<div class="fixed bottom-0 left-0 right-0 z-50 p-6 flex flex-col items-center gap-4 bg-gradient-to-t from-background via-background/90 to-transparent">
+<!-- Primary Action Buttons -->
+<div class="flex gap-4 w-[90%] max-w-md">
+<button class="flex-1 bg-primary-container text-black font-['Space_Grotesk'] font-bold py-4 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all active:translate-x-[4px] active:translate-y-[4px] uppercase tracking-wider flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">near_me</span>
+                INITIATE ROUTE
+            </button>
+<button class="px-6 bg-white dark:bg-zinc-900 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all active:translate-x-[4px] active:translate-y-[4px]">
+<span class="material-symbols-outlined text-on-background" data-icon="favorite">favorite</span>
+</button>
+</div>
+<!-- BottomNavBar (Shared Component) -->
+<nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md z-50 flex justify-around items-center h-20 px-4 bg-white dark:bg-zinc-900 border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] rounded-full">
+<!-- EXPLORE -->
+<div class="flex flex-col items-center justify-center p-2 text-zinc-900 dark:text-zinc-50 transition-colors cursor-pointer group">
+<span class="material-symbols-outlined" data-icon="home_app_logo">home_app_logo</span>
+<span class="font-['Space_Grotesk'] font-bold text-[12px] uppercase">EXPLORE</span>
+</div>
+<!-- SEARCH -->
+<div class="flex flex-col items-center justify-center p-2 text-zinc-900 dark:text-zinc-50 transition-colors cursor-pointer group">
+<span class="material-symbols-outlined" data-icon="manage_search">manage_search</span>
+<span class="font-['Space_Grotesk'] font-bold text-[12px] uppercase">SEARCH</span>
+</div>
+<!-- SAVED -->
+<div class="flex flex-col items-center justify-center p-2 text-zinc-900 dark:text-zinc-50 transition-colors cursor-pointer group">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<span class="font-['Space_Grotesk'] font-bold text-[12px] uppercase">SAVED</span>
+</div>
+<!-- LOGS (Active State as Detail page is a specimen log) -->
+<div class="bg-[#FFEE00] text-black border-2 border-black rounded-full p-2 translate-y-[-4px] flex flex-col items-center justify-center cursor-pointer">
+<span class="material-symbols-outlined" data-icon="database" style="font-variation-settings: 'FILL' 1;">database</span>
+<span class="font-['Space_Grotesk'] font-bold text-[12px] uppercase">LOGS</span>
+</div>
+</nav>
+</div>
+</body></html>
